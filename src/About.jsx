@@ -163,15 +163,21 @@ const AboutPage = () => {
       name: "Anju Tiji",
       image: anju,
       style: { 
-        marginTop: '250px',
+        height: '350px',
+        width: '100%',
         position: 'relative',
-        top: '20px',
-        paddingTop: '20px'
+        top: '0px'
       }
     },
     {
       name: "Avin Madhu",
       image: avinImage,
+      style: { 
+        height: '350px',
+        width: '100%',
+        position: 'relative',
+        top: '0px'
+      }
     },
     {
       name: "Govind V Namboothiri",
@@ -244,6 +250,7 @@ const AboutPage = () => {
                 <img 
                   src={member.image} 
                   alt={member.name} 
+                  style = {member.style}
                   className="w-full h-48 sm:h-56 md:h-64 object-cover"
                 />
                 <div className="p-4 md:p-6">
