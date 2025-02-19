@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import './Navbar.css'
 import logo from './images/logo.png';
 
-
-
-
 const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -24,13 +21,13 @@ const Navbar = () => {
     });
   }, [isOpen]);
   return (
-    <nav className="fixed top-0 left-0 w-full bg-[#0a192f] py-4 z-50">
+    <nav className="fixed  top-0 left-0 w-full bg-transparent py-3 z-50">
       <div className="container mx-auto flex justify-between items-center pl-4"> {/* Added padding-left for right shift */}
         <div className="flex items-center">
         
         <Link to="/" className="flex items-center">
   <img src={logo} alt="Radius Logo" className="h-10 w-auto ml-2" /> {/* Added left margin for right shift */}
-  <span className="text-white font-bold text-2xl ml-4">Radius</span> {/* Increased left margin for right shift */}
+  <span className="text-white font-bold text-1xl ml-4">Radius</span> {/* Increased left margin for right shift */}
 </Link>
 
         </div>
