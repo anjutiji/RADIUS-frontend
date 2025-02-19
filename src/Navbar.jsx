@@ -21,7 +21,7 @@ const Navbar = () => {
     });
   }, [isOpen]);
   return (
-    <nav className="fixed  top-0 left-0 w-full bg-[#000000] py-3 z-50">
+    <nav className="fixed  top-0 left-0 w-full bg-transparent py-3 z-50">
       <div className="container mx-auto flex justify-between items-center pl-4"> {/* Added padding-left for right shift */}
         <div className="flex items-center">
         
