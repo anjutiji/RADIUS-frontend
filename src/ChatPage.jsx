@@ -295,7 +295,6 @@ const App = () => {
 
       setIsBotProcessing(true);
       
-
       try {
         const response = await fetch("https://radius-pjnb.onrender.com/get_data", {
           method: "POST",
