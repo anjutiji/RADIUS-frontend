@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { ThreeDots } from 'react-loader-spinner';
 import ReactMarkdown from 'react-markdown';
 import { useNavigate } from "react-router-dom";
-
+import logo from './images/logo.png';
 import {
   Send,
   Mic,
@@ -348,7 +348,10 @@ const App = () => {
         <div className="max-w-8xl mx-auto px-4">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
-              <img src="./src/components/logo.png" alt="" />
+            <img 
+                  src={logo} 
+                  alt="logo" 
+                  className={`h-9 w-auto ml-2 ${isDarkMode ? "brightness-100" : "brightness-0"}`} />
               <span className={`ml-2 text-xl font-bold ${textColor}`}>
                 Radius
               </span>
@@ -432,7 +435,7 @@ const App = () => {
                   }`}
                 >
                   <ThreeDots
-                    color="#00BFFF"
+                    color="#000c10"
                     height={24}
                     width={40}
                   />
@@ -462,7 +465,7 @@ const App = () => {
               >
                 <Mic
                   className={`w-5 h-5 ${
-                    isListening ? "text-white" : "text-gray-400"
+                    isListening ? "text-white" : "text-white-400"
                   }
                   ${isDarkMode ? "text-white" : "hover:text-white"}`}
                 />

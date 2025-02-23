@@ -47,8 +47,8 @@ const ContactPage = () => {
       <Navbar/>
       <div className="contact-container">
         <div className="contact-info">
-          <h1 className="contact-title">Contact Us</h1>
-          <p className="contact-description">
+        <h1 className="contact-title" style={{ marginTop: "80px" }}>Contact Us</h1>
+        <p className="contact-description">
             Have questions or want to get in touch? We'd love to hear from you. 
             Our team is ready to assist you with any inquiries or feedback you may have.
           </p>
