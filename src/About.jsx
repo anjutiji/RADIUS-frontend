@@ -85,8 +85,8 @@ const AboutPage = () => {
         </p>
 
         {/* Main Content */}
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-20" style={{ marginLeft: '100px' }}>
-          <div className="bg-[#1a2942] p-8 rounded-2xl shadow-2xl aspect-ratio-1 md:aspect-ratio-4/3 lg:aspect-ratio-1 xl:aspect-ratio-4/3">
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-20 lg:ml-[100px]">
+          <div className="sm:p-2  bg-[#1a2942] p-8 rounded-2xl shadow-2xl aspect-ratio-1 md:aspect-ratio-4/3 lg:aspect-ratio-1 xl:aspect-ratio-4/3">
             <img 
               src={radius} 
               alt="Chatbot" 
@@ -126,7 +126,7 @@ const AboutPage = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 font-['righteous']">
             Meet Our Team
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {teamMembers.map((member, index) => (
               <div 
                 key={index} 

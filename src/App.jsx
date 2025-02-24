@@ -16,8 +16,6 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  
-
   return (
     <BrowserRouter>
       {loading ? (
