@@ -26,8 +26,8 @@ const Navbar = () => {
         <div className="flex items-center">
         
         <Link to="/" className="flex items-center">
-  <img src={logo} alt="Radius Logo" className="h-10 w-auto ml-2" /> {/* Added left margin for right shift */}
-  <span className="text-white font-bold text-1xl ml-4">Radius</span> {/* Increased left margin for right shift */}
+  <img src={logo} alt="Radius Logo" className="sm:absolute sm:left-[5px] sm:top-[5px] h-10 w-auto ml-2" /> {/* Added left margin for right shift */}
+  <span className="sm:absolute sm:left-[50px] sm:top-[10px] text-white font-bold text-1xl ml-4">Radius</span> {/* Increased left margin for right shift */}
 </Link>
 
         </div>
@@ -35,9 +35,9 @@ const Navbar = () => {
         <Link to="/about" className="text-white hover:text-gray-300 transition duration-200 ease-in-out px-4">About</Link>
         <Link to="/contact" className="text-white hover:text-gray-300 transition duration-200 ease-in-out px-4">Contact</Link>
         </div>
-        <div className="md:hidden flex items-center">
-          <button className="text-white hover:text-gray-300 transition duration-200 ease-in-out px-4" id="menu-button">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div className="  md:hidden flex items-center">
+          <button className=" text-white hover:text-gray-300 transition duration-200 ease-in-out px-4" id="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" className="sm:absolute sm:right-[10px] h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
