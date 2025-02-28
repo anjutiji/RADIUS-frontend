@@ -34,14 +34,13 @@ const CollegeSelector = ({
   const [selectedCollegeName, setSelectedCollegeName] = useState(
     colleges.find((c) => c.id === selectedCollege)?.name
   );
-
+  
   const handleSelect = (collegeId) => {
-    const selectedCollege = colleges.find((c) => c.id === collegeId);
-    setSelectedCollegeName(selectedCollege.name);
-    onSelect(collegeId);
+    const college = colleges.find((c) => c.id === collegeId);
+    setSelectedCollegeName(college.name);
+    onSelect(collegeId); 
     setIsOpen(false);
   };
-
   return (
     <div className="relative z-10">
       <button
@@ -230,9 +229,11 @@ const App = () => {
     { id: 5, name: "College of Engineering Poonjar" },
     { id: 6, name: "College of Engineering Kalloopaara" },
     { id: 7, name: "College of Engineering Cherthala" },
+    { id: 8, name: "College of Engineering Kottarakkara" },
   ];
 
   const handleCollegeChange = async (collegeId) => {
+    setSelectedCollege(collegeId); 
     setIsModalOpen(false);
   };
 
@@ -304,7 +305,7 @@ const App = () => {
           },
           body: JSON.stringify({
             question: inputText,
-            colleges: selectedCollege,
+            colleges: selectedCollege, 
           }),
         });
 
@@ -431,14 +432,14 @@ const App = () => {
             {isBotProcessing && (
               <div className="flex justify-start">
                 <div
-                  className={`p-3 rounded-2xl ${
-                    isDarkMode ? 'bg-gray-700/50 text-white' : 'bg-gray-700/40 text-gray-900'
-                  }`}
+                className={`p-3 rounded-2xl ${
+                isDarkMode ? 'bg-blue-800/50' : 'bg-gray-300/50'
+              }`}
                 >
                   <ThreeDots
-                    color="#000c10"
-                    height={24}
-                    width={40}
+                  color={isDarkMode ? "#b3e0ff" : "#000c10" }
+                  height={24}
+                  width={40}
                   />
                 </div>
               </div>
